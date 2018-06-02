@@ -23,9 +23,12 @@ export default {
     }
   },
   methods: {
-    translateText: function(theText){
+    translateText: function(translationInfo){
+      var theText = translationInfo.textToTranslate;
+      var toLang = translationInfo.toLanguage;
+
       var translatedText = "";
-      var endpoint = `https://translate.yandex.net/api/v1.5/tr.json/translate?key=${envvars.YANDEX_KEY}&lang=ru&text=${theText}`;
+      var endpoint = `https://translate.yandex.net/api/v1.5/tr.json/translate?key=${envvars.YANDEX_KEY}&lang=ru&text=${theText}&lang=${toLang}`;
       this.$http.get(endpoint).then( (res) => {
         console.log(res.body.text[0]);
         this.translatedText = res.body.text[0];
