@@ -1,7 +1,7 @@
 <template>
   <div>
     <h6> Powered by Vue.js and Yandex API</h6>
-    <form  class='mt48' v-on:submit="submitData">
+    <form class='mt48' v-on:submit="submitData">
       <div class='form-group'>
         <input type='text' class='form-control' v-model="textToTranslate" placeholder='Type a word' />
       </div>
@@ -24,8 +24,8 @@
           </option>
         </select>
       </div>
-      <div class='form-group'>
-        <input class='btn btn-success' type='submit' value='Translate!' />
+      <div class='text-uppercase col-sm-6 offset-sm-3 mt48'>
+        <input class='btn btn-success btn-block' type='submit' value='Translate!' />
       </div>
     </form>
   </div>
