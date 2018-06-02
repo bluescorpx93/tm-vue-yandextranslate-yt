@@ -2,7 +2,7 @@
 <div>
   <h1>Yandex Word Translator</h1>
   <TranslateForm v-on:dataSent="translateText"></TranslateForm>
-  <TranslateOutput></TranslateOutput>
+  <TranslateOutput v-bind:the_translated_text="translatedText"></TranslateOutput>
 </div>
 </template>
 
@@ -17,11 +17,20 @@ export default {
     TranslateForm,
     TranslateOutput
   },
+  data() {
+    return {
+      translatedText : ""
+    }
+  },
   methods: {
     translateText: function(theText){
-      var endpoint = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key='
-      // this.$http.get
-      console.log(envvars.YANDEX_KEY);
+      var translatedText = "";
+      var endpoint = `https://translate.yandex.net/api/v1.5/tr.json/translate?key=${envvars.YANDEX_KEY}&lang=ru&text=${theText}`;
+      this.$http.get(endpoint).then( (res) => {
+        console.log(res.body.text[0]);
+        this.translatedText = res.body.text[0];
+      });
+
     }
   }
 }
