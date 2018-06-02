@@ -1,5 +1,5 @@
 <template>
-  <div class='container' id="app">
+  <div class='jumbotron  col-sm-6 offset-sm-3 mt48' id="app">
     <router-view/>
   </div>
 </template>
@@ -9,14 +9,3 @@ export default {
   name: 'App'
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: left;
-  color: #2c3e50;
-  padding: 40px;
-}
-</style>

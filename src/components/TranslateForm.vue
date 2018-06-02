@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h4> Powered by Vue.js and Yandex API</h4>
-    <form v-on:submit="submitData">
+    <h6> Powered by Vue.js and Yandex API</h6>
+    <form  class='mt48' v-on:submit="submitData">
       <div class='form-group'>
-        <input type='text' v-model="textToTranslate" placeholder='Type a word' />
+        <input type='text' class='form-control' v-model="textToTranslate" placeholder='Type a word' />
       </div>
       <div class='form-group'>
-        <select v-model="toLanguage">
+        <select v-model="toLanguage" class='form-control' >
           <option value='es'>
             Spanish
           </option>
@@ -25,7 +25,7 @@
         </select>
       </div>
       <div class='form-group'>
-        <input type='submit' value='Translate!' />
+        <input class='btn btn-success' type='submit' value='Translate!' />
       </div>
     </form>
   </div>
