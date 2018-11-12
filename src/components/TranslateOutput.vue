@@ -1,7 +1,7 @@
 <template>
   <div class='mt48'>
-    <h5>Yandex Translation </h5>
-    <h3 class='text-center mt48'> {{ the_translated_text }}</h3>
+    <h5 class='text-center'>Yandex Translation </h5>
+    <h3 class='text-center mt24'> {{ the_translated_text }}</h3>
   </div>
 </template>
 
