@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "YnxWordTranslator": {
+      "applicationId": "svUFcdKtRkljyTbnUawOwWrLLifdS6UAVlgbovGf"
+    },
+    "_default": {
+      "link": "YnxWordTranslator"
+    }
+  }
+}
