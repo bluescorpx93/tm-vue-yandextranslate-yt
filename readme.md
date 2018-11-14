@@ -6,7 +6,7 @@ To Test This
 
 - Create appKeys.js
 ```sh
-$ cd tm-vue-yandextranslate-yt
+$ cd tm-vue-yandex-translate-yt
 $ touch src/keys/appKeys.js
 ```
 
@@ -23,7 +23,7 @@ export default appKeys
 
 - Install Packages Dependencies
 ```sh
-$ cd tm-vue-yandextranslate-yt
+$ cd tm-vue-yandex-translate-yt
 $ yarn install
 
 #or with npm
@@ -32,13 +32,13 @@ $ npm install
 
 - Run app in PROD Mode
 ```sh
-$ cd tm-vue-yandextranslate-yt
+$ cd tm-vue-yandex-translate-yt
 $ yarn start-app
 ```
 
 - Run app in DEV Mode
 ```sh
-$ cd tm-vue-yandextranslate-yt
+$ cd tm-vue-yandex-translate-yt
 $ yarn start
 
 # Remember to run 
